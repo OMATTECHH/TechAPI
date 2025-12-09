@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Lucas Almeida",
+      "email": "lucas.almeida@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Mariana Costa",
+      "email": "mariana.costa@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Rafael Silva",
+      "email": "rafael.silva@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Ana Vitória",
+      "email": "ana.vitoria@example.com"
+    },
+    {
+      "id": "5",
+      "name": "Pedro Henrique",
+      "email": "pedro.henrique@example.com"
+    },
+    {
+      "id": "6",
+      "name": "Beatriz Fernandes",
+      "email": "beatriz.fernandes@example.com"
+    },
+    {
+      "id": "7",
+      "name": "Guilherme Ramos",
+      "email": "guilherme.ramos@example.com"
+    },
+    {
+      "id": "8",
+      "name": "Sofia Martins",
+      "email": "sofia.martins@example.com"
+    },
+    {
+      "id": "9",
+      "name": "Mateus Oliveira",
+      "email": "mateus.oliveira@example.com"
+    },
+    {
+      "id": "10",
+      "name": "Camila Rocha",
+      "email": "camila.rocha@example.com"
+    },
+    {
+      "id": "7cf6",
+      "name": "Mateus Monteiro",
+      "email": "devuteus.officeti@gmail.com"
+    }
+  ]
+}
