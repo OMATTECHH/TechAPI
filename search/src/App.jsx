@@ -18,8 +18,8 @@ function App() {
     {/* Quando a urrl for alguma coisa*/}
               <Route path='/' element={<Home/>}/>
               <Route path='/busca' element={<Busca/>}/>
-              <Route path='/busca/:id' element={<Detalhes/>}/>
-              <Route path='/detales/:id/end' element={<End/>}/>
+              <Route path='/detalhes/:id' element={<Detalhes/>}/>
+              <Route path='/detalhes/:id/end' element={<End/>}/>
          </Routes>
       </BrowserRouter>
     </>

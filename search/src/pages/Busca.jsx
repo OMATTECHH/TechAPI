@@ -59,7 +59,7 @@ const Busca = () => {
                     <ul className='bg-neutral-600 p-3 rounded-2xl w-2xl flex flex-col gap-2 h-fit'>
                         {usuario.map((u) => (
                             <li key={u.id}><strong>{u.name}</strong> - {u.email} - {(
-                                <Link to={`/busca/${u.id}`}><strong className='bg-neutral-900/80 py-1 p-2 rounded-2xl'>Detalhes</strong></Link>
+                                <Link to={`/detalhes/${u.id}`}><strong className='bg-neutral-900/80 py-1 p-2 rounded-2xl'>Detalhes</strong></Link>
                             )}</li>
                         ))}
                     </ul>
