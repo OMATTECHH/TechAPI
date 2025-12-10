@@ -11,12 +11,15 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+    {/* controlador de rotas, ele evita que recarrregue o site todo*/}
+      <BrowserRouter basename='/TechAPI'>
+    {/* organizador de caminhos*/}
          <Routes>
+    {/* Quando a urrl for alguma coisa*/}
               <Route path='/' element={<Home/>}/>
               <Route path='/busca' element={<Busca/>}/>
               <Route path='/busca/:id' element={<Detalhes/>}/>
-              <Route path='/busca/:id/end' element={<End/>}/>
+              <Route path='/detales/:id/end' element={<End/>}/>
          </Routes>
       </BrowserRouter>
     </>

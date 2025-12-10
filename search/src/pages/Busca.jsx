@@ -4,20 +4,29 @@ import { Link } from 'react-router-dom';
 
 const Busca = () => {
 
+    // recebe o nome do input
     const [name, setName] = useState("")
+
+    // recebe o email do input
     const [email, setEmail] = useState("")
 
+    // url da nossa API, onde estaos os usuarios
     const url = "http://localhost:3006/users";
 
+    // aqui destructaramos aquiilo que retornamos la no hook
+    // chamamos o customHook e passa a url como parametro
     const {data: usuario, setData: setUser, msg, loading} = useFetch(url)
 
     const handleSubmit = async (e) => {
+        // permite nao ter o comportamento padrrao do form
         e.preventDefault();
 
+        // selecionamos o name e email do input, quando ha o mesmo nome do json com input nao precisamos renomear
         const add = {
             name, email
         };
 
+        // receber
         const res = await fetch(url, {
             method: "POST",
             headers: {
@@ -26,14 +35,18 @@ const Busca = () => {
             body: JSON.stringify(add)
         });
 
+        // trasformar
         const load  = res.json();
 
+        // aqui pegamos o valor autal e ja colocamos dentro da lista de usuarios
         setUser((prev) => [...prev, load])
 
+        //zeramo = limpamos
         setName("")
         setEmail("")
     };
     
+    // abaixo temos um Link com  o  caminho com /busca/${u.id}^ quado a url for busca e tiver o id tal mostre a paggina detalhes
     return (
         <>
             {loading ? (

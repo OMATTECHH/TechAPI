@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 
 const Detalhes = () => {
 
+    // puxamos o id com esse hook
     const {id} = useParams()
 
+    // passamos o id pra url
     const url = `http://localhost:3006/users/${id}`;
 
+
+    // chamamos o customHook para performance 
     const {data: user, msg, loading} = useFetch(url)
 
     return (
@@ -24,7 +28,7 @@ const Detalhes = () => {
                 <li>{user.email}</li>
             </ul>
 
-            <Link to={`/busca/${id}/end`} className='bg-neutral-600 p-2 rounded-2xl block mt-5'>informações</Link>
+            <Link to={`/detalhes/${id}/end`} className='bg-neutral-600 p-2 rounded-2xl block mt-5'>informações</Link>
         </div>
         </>
     )
